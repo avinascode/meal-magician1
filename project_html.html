@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Recipe Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🍳 Smart Recipe Generator</h1>
+        <div class="filters">
+            <select id="diet">
+                <option value="">Any Diet</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="gluten-free">Gluten-Free</option>
+            </select>
+            <input type="text" id="ingredients" placeholder="Enter ingredients (comma separated)">
+            <button id="generate-btn">Generate Recipe</button>
+        </div>
+        <div id="recipe-result" class="hidden">
+            <h2 id="recipe-title"></h2>
+            <img id="recipe-image" src="" alt="Recipe Image">
+            <div id="recipe-details"></div>
+            <button id="save-btn">❤️ Save Recipe</button>
+        </div>
+        <div id="saved-recipes">
+            <h2>Your Saved Recipes</h2>
+            <ul id="saved-list"></ul>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
